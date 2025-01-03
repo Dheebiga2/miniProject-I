@@ -9,9 +9,11 @@ import app.employee_management.model.Employee;
 import app.employee_management.repository.EmployeeRepository;
 import app.employee_management.validation.EmployeeIdNotPresent;
 
+//implementation of all methods from service interface
 @Service
 public class EmpServiceImplementation implements EmployeeService{
 
+	//to connect repository layer to get the default methods to perform some operations on data
 	@Autowired
 	private EmployeeRepository employeeRepository;
 	
